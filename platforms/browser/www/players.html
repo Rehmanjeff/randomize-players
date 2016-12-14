@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/player.css">
+
+        <title>Randomize Players</title>
+    </head>
+    <body>
+	    <div class="container">
+	    	<div class="col-md-12 col-sm-12">
+		         <div class="add_players">
+			         <h1 style="color: white;">Names of Players</h1>
+					<form>
+		            <div class="clone_content col-md-7 col-sm-7 col-xs-10">
+		                <input type="text" class="form-control player_names" placeholder="Enter Player Name" name="all_names[]" required>
+		            </div>
+
+		            <div class="clearfix">
+		            </div>
+		            <br>
+
+		            <div class="place_cloned_content">
+		            </div>
+
+		            <div class="clearfix">
+		            </div>
+		            <br>
+		            <div>
+		                <a href="#" class="place_clone btn btn-info" name="">+ Add player</a>
+		                <input type="submit" class="btn btn-primary form_submit" value="Submit" name="">
+		            </div>
+		            </form>
+	            </div>
+
+
+              <div class="cssload-thecube hidden">
+                <div class="cssload-cube cssload-c1"></div>
+                <div class="cssload-cube cssload-c2"></div>
+                <div class="cssload-cube cssload-c4"></div>
+                <div class="cssload-cube cssload-c3"></div>
+              </div>
+
+
+
+	            <div class="result hidden">
+		            <div class>
+				         <h1>Result</h1>	
+				         <ul class="omitt_results">
+				         	
+				         </ul>
+		            </div>
+		            <span class="go_home"><a href="index.html" class="btn btn-primary">Go Back</a></span>
+	            </div>
+            </div>
+        </div>
+        <script src="cordova.js"></script>
+    </body>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.backstretch.js"></script>
+
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.ui.js"></script>
+
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/player.js"></script>
+</html>
+<style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Roboto:400,900);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, 
+body {  
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto';
+}
+ 
+html {
+  background: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: .75rem;
+}
+
+.fl-right {
+  float: right;
+}
+
+.fl-left {
+  float: left;
+}
+
+body {
+  font-size: 0.9em;
+  color: #222;
+  background: #fff;
+  height: .25rem;
+  top: 0;
+  bottom: 0;
+  /*margin: auto;*/
+  position: absolute;
+  /*width: 0%;*/
+}
+
+h1 {
+  font-weight: 900;
+  margin: .5rem 0 1.5rem;
+  padding-bottom: .5rem;
+  font-size: 3em;
+  border-bottom: .25rem solid #222;
+}
+
+.wrap {
+  max-width: 60%;
+  min-width: 61.25rem;
+  margin: 2rem auto 0;
+  opacity: 0;
+}
+ 
+@media (max-width: 63rem) {
+  html {
+    font-size: 13px;
+  }
+  
+  .wrap {
+    max-width: none;
+    min-width: 100%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 45rem) {
+  img {
+    width: 100%;
+    margin: .5rem 0;
+  }
+  
+  .fl-left,
+  .fl-right {
+    display: block;
+    float: none;
+  }
+}
+ul {
+  font-family: monospace;
+  font-size: 20px;
+  list-style: none;
+  /*margin: 2em;*/
+  padding: 0;
+}
+ul li {
+  margin: 0;
+    /* margin-bottom: 1em; */
+	padding-left: 0.7em;
+  position: relative;
+}
+ul li:after {
+  content: '';
+  height: .4em;
+  width: .4em;
+  background: #D2153A;
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  /*top: .25em;*/
+  top: 0.691em;
+  left: 0;
+}
+
+</style>
